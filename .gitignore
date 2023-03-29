@@ -21,6 +21,7 @@ pubspec.lock
 .settings/
 .vscode/launch.json
 .vscode/settings.json
+.angular/cache
 .vscode/tasks.json
 *.swo
 *.swp
