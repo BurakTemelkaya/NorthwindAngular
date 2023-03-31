@@ -1,0 +1,29 @@
+<body class="text-center">
+
+    <main class="form-signin w-100 m-auto">
+        <form [formGroup]='loginForm'>
+            <h1 class="h3 mb-3 fw-normal">Giriş Yap</h1>
+
+            <div class="form-floating">
+                <input formControlName="email" type="email" class="form-control" id="floatingInput"
+                    placeholder="ad@ornek.com">
+                <label for="floatingInput">E-posta</label>
+            </div>
+            <div class="form-floating">
+                <input formControlName="password" type="password" class="form-control" id="floatingPassword"
+                    placeholder="Parola">
+                <label for="floatingPassword">Parola</label>
+            </div>
+
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Beni Hatırla
+                </label>
+            </div>
+            <button (click)="login()" class="w-100 btn btn-lg btn-primary">Giriş Yap</button>
+        </form>
+    </main>
+
+
+
+</body>

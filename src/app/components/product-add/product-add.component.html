@@ -1,0 +1,50 @@
+<div class="content">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="title">Ürün ekle</h5>
+            </div>
+            <div class="card-body">
+                <form [formGroup]="productAddForm">
+                    <div class="mb-3">
+                        <label for="productName">Ürün adı</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="productName" formControlName="productName"
+                                placeholder="Ürün adını">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Kategori numarası">Kategori numarası</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="categoryId" formControlName="categoryId"
+                                placeholder="Kategori numarası">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="unitsInStock">Stok adedi</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="unitsInStock" formControlName="unitsInStock"
+                                placeholder="Stok adedi">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="unitPrice">Fiyatı</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="unitPrice" formControlName="unitPrice"
+                                placeholder="Fiyatı">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="card-footer">
+                <button class="btn btn-fill btn-primary" (click)="add()">Ekle</button>
+            </div>
+
+        </div>
+    </div>
+</div>
